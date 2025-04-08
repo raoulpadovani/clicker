@@ -1,5 +1,5 @@
 *{color: whitesmoke;}
-body{background-image: url(https://fr-minecraft.net/telecharger.php?id=19990);
+body{background-image: url(fond.png);
 background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center;
 cursor: url('pioche.png'), auto;
 pointer-events: auto;
@@ -8,6 +8,7 @@ height: 500vh;
 
 button {
     cursor: url('pioche.png'), auto;
+    cursor: url('piochej.png'), auto;
 }
 
 .clicker{
