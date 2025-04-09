@@ -1,14 +1,22 @@
-*{color: whitesmoke;}
-body{background-image: url(fond.png);
+
+body{background-image: url('fond.png');
 background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center;
 cursor: url('pioche.png'), auto;
 pointer-events: auto;
 height: 500vh;
+color: white;
 }
-
-button {
-    cursor: url('pioche.png'), auto;
-    cursor: url('piochej.png'), auto;
+.boutique{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -30px;
+}
+.item{
+    display : flex;
+    flex-direction: row;
+    color: black;
 }
 
 .clicker{
@@ -17,4 +25,11 @@ button {
     justify-content: center;
     flex-direction: column;
 }
-
+h1{align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 20px;
+}
