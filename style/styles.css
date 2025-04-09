@@ -1,0 +1,42 @@
+
+body{background-image: url('/clicker/asset/paysage/fond.png');
+background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center;
+cursor: url('/clicker/asset/item/mp.png');
+cursor: zoom-in;
+pointer-events: auto;
+height: 500vh;
+color: white;
+}
+
+.musique{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.boutique{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -30px;
+}
+.item{
+    display : flex;
+    flex-direction: row;
+    color: black;
+}
+
+.clicker{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 20px;
+}

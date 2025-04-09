@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="clicker.js" defer></script>
+    <title>MineClick</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <script src="js/clicker.js" defer></script>
 </head>
 <body>
-    <h1>Clicker Game</h1>
+    <h1>MineClick</h1>
+    <section class="musique">
+        <button id="son">musique</button><audio id="audio" src="musicmincraft.mp3"></audio>
+    </section>
     <h1>Click pour gagner des points!</h1>
     <section class="clicker">
         <div id="block">
-            <img src="p.png"/>
+            <img src="asset/block/p.png"/>
         </div>
         <h1>
             score:
             <span id="counter">0</span>
+            <input id="reset" type="reset" value="rejouer" />
         </h1>
     </section>
         <section class="boutique">
@@ -24,10 +28,15 @@
                 <h2>Améliorations</h2>
             </section>
             <section class ="item">
-                <button id="fer"><img src ="piochef.png"><br>2click<br>30 gold</button>
-                <button id="or"><img src ="piochej.png"><br>4click<br>50 gold</button>
-                <button id="diamant"><img src ="pioche.png"><br>2click<br>30 gold</button>
-                <button id="netherite"><img src ="piochep.png"><br>4click<br>50 gold</button>
+                <button id="fer"><img src ="asset/item/mi.png"><br>2click<br>30 gold</button>
+                <button id="or"><img src ="asset/item/min.png"><br>4click<br>50 gold</button>
+                <button id="diamant"><img src ="asset/item/mpiochediamant.png"><br>8click<br>80 gold</button>
+                <button id="netherite"><img src ="asset/item/mine.png"><br>16click<br>110 gold</button>
+
+                <button id="hachefer"><img src ="asset/item/hf.png"><br>32click<br>220 gold</button>
+                <button id="hacheor"><img src ="asset/item/ho.png"><br>64click<br>440 gold</button>
+                <button id="hachediamant"><img src ="asset/item/mhachediamant.png"><br>128click<br>880 gold</button>
+                <button id="hachenetherite"><img src ="asset/item/hn.png"><br>232click<br>1760 gold</button>
                 
             </section>
 
