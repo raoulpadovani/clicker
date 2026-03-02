@@ -1,46 +1,177 @@
-
-body{background-image: url('/clicker/asset/paysage/fond.png');
-background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center;
-cursor: url('/clicker/asset/item/mp.png');
-cursor: zoom-in;
-pointer-events: auto;
-height: 500vh;
-color: white;
+/* Reset de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.musique{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    margin-top: -20px;
-}
-.boutique{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: -30px;
-}
-.item{
-    display : flex;
-    flex-direction: row;
-    color: black;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1c1c1c;
+  color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.clicker{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+/* Conteneur principal */
+.container {
+  display: flex;
+  height: 100vh;
+  padding: 20px;
 }
-h1{align-items: center;
-    justify-content: center;
-    text-align: center;
-    
-    color: white;
-    font-family: 'Press Start 2P', cursive;
-    margin-top: 20px;
+
+/* Colonne gauche (clic) */
+.left {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  margin-top: -10%;
+  border-right: 2px solid #444;
 }
+
+#titre{
+  margin-top: 0%;
+}
+
+#counter {
+  font-size: 3rem;
+  margin: 10px 0;
+}
+
+#cps {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.clickable img {
+  
+  transition: transform 0.2s ease;
+}
+
+.clickable img:active {
+  transform: scale(0.95);
+}
+
+.reset-btn {
+  margin-top: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.musique {
+  margin-top: 30px;
+}
+
+.musique button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Colonne droite (boutique) */
+.right {
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(20, 20, 20, 0.9);
+  overflow-y: auto;
+}
+
+.right h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #00ffff;
+  
+}
+
+.boutique {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.boutique button {
+  width: 120px;
+  height: 120px;
+  background-color: #292929;
+  border: 2px solid #555;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 0.9rem;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s;
+}
+
+.boutique button:hover {
+  background-color: #3b3b3b;
+  transform: scale(1.05);
+}
+
+.boutique img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+
 #son{
-    all: unset;
+  all: unset;
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    padding: 5px;
+  }
+  .left, .right {
+    flex: unset;
+    width: 100%;
+    padding: 10px 5px;
+    margin-top: 0;
+    border-right: none;
+    border-bottom: 2px solid #444;
+  }
+  .right {
+    border-bottom: none;
+    border-top: 2px solid #444;
+    min-height: 300px;
+  }
+  #titre {
+    width: 180px !important;
+    height: 180px !important;
+  }
+  .clickable img {
+    width: 120px !important;
+    height: 120px !important;
+  }
+  .boutique {
+    gap: 8px;
+  }
+  .boutique button {
+    width: 80px;
+    height: 80px;
+    font-size: 0.7rem;
+    padding: 2px;
+  }
+  .boutique img {
+    width: 28px;
+    height: 28px;
+  }
+  #counter {
+    font-size: 2rem;
+  }
+  #cps {
+    font-size: 1rem;
+  }
+  .musique {
+    margin-top: 15px;
+  }
+  .reset-btn img {
+    width: 60px !important;
+    height: 60px !important;
+  }
 }

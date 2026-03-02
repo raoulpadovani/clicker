@@ -1,53 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MineClick</title>
-    <link rel="stylesheet" href="style/styles.css">
-    <script src="js/clicker.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <link rel="stylesheet" href="style/styles.css">
+  <script src="js/clicker.js" defer></script>
 </head>
 <body>
-    <h1>MineClick</h1>
-    <h1>Musique</h1>
-    <section class="musique">
-        <button id="son"><img src ="asset/item/jukebox.gif"></button><audio id="audio" src="musicmincraft.mp3"></audio>
+  <main class="container">
+    <!-- Partie gauche : bloc à cliquer -->
+    <section class="left">
+      <img src="asset/item/titre.png" alt="Titre du jeu" width="300px" height="300px" id="titre"/>
+      <h2 id="counter">0</h2>
+      <p id="cps">0 clics </p>
+      <div id="block" class="clickable">
+        <img src="asset/block/p.png" width="200" height="200" />
+      </div>
+      
+     
     </section>
-    <h1>Click pour gagner des points!</h1>
-    <section class="clicker">
-        <section class ="gif"><img src="asset/item/miner.gif"><bouton id="block"><img src="asset/block/p.png"/></bouton></section>
-        <h1>
-            score:
-            <span id="counter">0</span>
-            <input id="reset" type="reset" value="rejouer" />
-        </h1>
-    </section>
-        <section class="boutique">
-            <section class ="titreb">
-                <h2>Améliorations</h2>
-            </section>
-            <section class ="item">
-                <button id="fer"><img src ="asset/item/mi.png"><br>2click<br>30 gold</button>
-                <button id="or"><img src ="asset/item/min.png"><br>4click<br>50 gold</button>
-                <button id="diamant"><img src ="asset/item/mpiochediamant.png"><br>8click<br>80 gold</button>
-                <button id="netherite"><img src ="asset/item/mine.png"><br>16click<br>110 gold</button>
 
-                <button id="hachefer"><img src ="asset/item/hf.png"><br>32click<br>220 gold</button>
-                <button id="hacheor"><img src ="asset/item/ho.png"><br>64click<br>440 gold</button>
-                <button id="hachediamant"><img src ="asset/item/hd.png"><br>128click<br>880 gold</button>
-                <button id="hachenetherite"><img src ="asset/item/hn.png"><br>232click<br>1760 gold</button>
-
-                <button id="epeefer"><img src ="asset/item/sf.png"><br>464click<br>3520 gold</button>
-                <button id="epeeor"><img src ="asset/item/so.png"><br>928click<br> 7040 gold</button>
-                <button id="epeediamant"><img src ="asset/item/sd.png"><br>1856click<br>14080 gold</button>
-                <button id="epeenetherite"><img src ="asset/item/sn.png"><br>3712click<br>28160 gold</button>
-                
-            </section>
-
-            </section>
-        
-    
-    
-    
+    <!-- Partie droite : boutique -->
+    <aside class="right">
+      <h2>Améliorations</h2>
+        <button id="son"><img src="asset/item/jukebox.gif" /></button>
+        <audio id="audio" src="musicmincraft.mp3"></audio>
+        <button id="reset" class="reset-btn">
+          <img src="asset/item/bloc-tnt-minecraft.png" height="100" width="100" />
+        </button>
+      <div class="boutique">
+        <button id="fer"><img src="asset/item/mi.png" /><br>2 clics<br>30 gold</button>
+        <button id="or"><img src="asset/item/min.png" /><br>4 clics<br>50 gold</button>
+        <button id="diamant"><img src="asset/item/mpiochediamant.png" /><br>8 clics<br>80 gold</button>
+        <button id="netherite"><img src="asset/item/mine.png" /><br>16 clics<br>110 gold</button>
+        <button id="hachefer"><img src="asset/item/hf.png" /><br>32 clics<br>220 gold</button>
+        <button id="hacheor"><img src="asset/item/ho.png" /><br>64 clics<br>440 gold</button>
+        <button id="hachediamant"><img src="asset/item/hd.png" /><br>128 clics<br>880 gold</button>
+        <button id="hachenetherite"><img src="asset/item/hn.png" /><br>256 clics<br>1760 gold</button>
+        <button id="epeefer"><img src="asset/item/sf.png" /><br>464 clics<br>3520 gold</button>
+        <button id="epeeor"><img src="asset/item/so.png" /><br>928 clics<br>7040 gold</button>
+        <button id="epeediamant"><img src="asset/item/sd.png" /><br>1856 clics<br>14080 gold</button>
+        <button id="epeenetherite"><img src="asset/item/sn.png" /><br>3712 clics<br>28160 gold</button>
+      </div>
+    </aside>
+  </main>
 </body>
 </html>
